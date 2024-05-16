@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet"/>
+    <title>Home - Soundhub</title>
+</head>
+<body>
+
+    <div class="account">
+        <ul>
+            <li class="ripple">Sign Out</li>
+            <li class="ripple">Switch account</li>
+            <li class="ripple">Send feedback</li>
+            <li class="ripple">Help</li>
+        </ul>
+    </div>
+    
+    <div class="side-menu">
+        <div class="menu-holder">
+            <button type="menu" class="menu"></button>
+            <p>Google Play <span>Music</span></p>
+        </div>
+        <ul>
+            <li>Listen Now</li>
+            <li>Top Charts</li>
+            <li>New Releases</li>
+            <li class="active">Music Library</li>
+            <li>Podcasts</li>
+            <li>Browse Stations</li>
+            <li>Shop</li>
+            <!-- The following is a loop -->
+            <!-- @for(var x = 1;x <= 10;x++) -->
+            <li>Lorem Ipsum...</li>
+            <!-- @endfor -->
+        </ul>
+        <button type="button" class="cta">Subscribe Now</button>
+    </div>
+    
+    <header>
+        <button type="menu" class="menu ripple"></button>
+        <h1>Music library</h1>
+        <input id="input" type="text" placeholder="Search" class="hidden desktop-only">
+        <label for="input" class="hidden mobile-only ripple"></label>
+        <div class="profile">
+            <ul>
+                <li class="ripple">Playlists</li>
+                <li class="ripple">Stations</li>
+                <li class="ripple">Artists</li>
+                <li class="ripple active">Albums</li>
+                <li class="ripple">Songs</li>
+                <li class="ripple">Genres</li>
+                <li class="slider"></li>
+            </ul>
+        </div>
+    </header>
+    
+    <main>
+        <!-- The following is a loop -->
+        <!-- @for(var x = 1;x <= 34;x++) -->
+        <div class="card ripple"></div>
+        <!-- @endfor -->
+        <!-- The following is another loop -->
+        <!-- @for(var x = 1;x <= 12;x++) -->
+        <div class="card ghost"></div>
+        <!-- @endfor -->
+    </main>
+    
+    <div class="side-menu-overlay"></div>
+    
+
+
+    
+</body>
+</html>

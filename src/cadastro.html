@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet"/>
+    <title>Cadastro - Soundhub</title>
+  </head>
+<body >
+
+  <!-- fazer o gradiente aqui do fundo -->
+    <div class="flex h-screen min-h-full self-center items-center bg-gradient-to-r from-indigo-700 bg-[#1E90FF] px-6 py-12 lg:px-8">
+      
+      
+      <div class="ml-28 h-5/6 w-4/12 rounded-3xl bg-[#FEFEFE]">
+
+                    
+
+        <div class="sm:mx-auto w-96">
+          <h2 class="mt-8 text-center text-3xl font-bold leading-9 tracking-tight text-cyan-300" style="text-shadow: 1px 1px 4px rgba(0,0,0,0.5)">Register</h2>
+        </div>
+
+        <div class="mt-14 ml-10 h-4/6 w-12/12">
+          <form class="space-y-6" action="#" method="POST">
+
+            <!--PARTE DO UsER-->
+            <div class="h-24 w-11/12 ">
+              <label for="User" class="absolute text-sm mt-3  font-medium leading-6 text-cyan-300">User:</label>
+              <div class="mt-2">
+              <input id="User" name="user" type="text" autocomplete="username" required class="ml-10 focus:border-transparent flex w-11/12 rounded-md focus:ring-indigo-600  py-2 text-gray-600 "/>
+              <div class="bg-[#87CEFA] w-12/12 h-0.5"></div>
+                            
+            </div>
+            </div>
+
+            <!--PARTE DO EMAIL-->
+
+            <div class=" h-24 w-11/12">
+              <label for="Email" class="absolute text-sm mt-3  font-medium leading-6 text-cyan-300">Email:</label>
+              <div class="mt-2">
+              <input id="Email" name="Email" type="email" autocomplete="current-password" required class="ml-10 focus:border-transparent flex sm:w-11/12 rounded-md focus:ring-indigo-600  py-2 text-gray-600 "/>
+              <div class="bg-[#87CEFA] w-full h-0.5"></div>
+                            
+
+            
+            </div>
+            </div>
+
+            <!--PARTE DA SENHA-->
+
+            <div class="h-24 w-11/12">
+              <label for="password" class="absolute text-sm mt-3  font-medium leading-6 text-cyan-300">Password:</label>
+              <div class="">
+              <input id="password" name="password" type="password" autocomplete="current-password" required class="ml-16 focus:border-transparent flex sm:w-11/12 rounded-md focus:ring-indigo-600  py-2 text-gray-600 "/>
+              <div class="bg-[#87CEFA] w-full h-0.5"></div>
+                            
+
+            
+            </div>
+            </div>
+
+            <!--PARTE DE CONFIRMAR SENHA-->
+
+            <div class="h-24 w-11/12">
+              <label for="confirm-password" class="absolute text-sm mt-3  font-medium leading-6 text-cyan-300">Confirm Password:</label>
+              <div class="mt-2">
+              <input id="confirm-password" name="confirm-password" type="password" autocomplete="current-password" required class="ml-32 focus:border-transparent flex sm:w-9/12 rounded-md focus:ring-indigo-600  py-2 text-gray-600 "/>
+              <div class="bg-[#87CEFA] w-full h-0.5"></div>
+                            
+
+            
+            </div>
+            </div>
+
+
+            <!--PARTE DO BOTÃO-->
+
+
+            </div>
+
+            <div class="flex ml-10 flex h-16 w-11/12">
+
+            <div class="flex align-center h-16 w-11/12">
+              <button type="submit" class="flex w-full place-items-center h-16 justify-center rounded-md bg-[#1E90FF] text-3xl font-semibold text-white shadow-xl" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Create</button>
+            </div>
+
+        </div>
+
+                    <!--DIV DA FOTO-->
+
+      </div>
+
+      <!-- DIV QUE ESPAÇA  -->
+      <div class="h-10   w-4/12"></div>
+      
+      <div class="flex justify-self-center justify-center items-center w-96 h-96 shadow-2xl rounded-full bg-[#D9D9D9]">
+        <div class= "flex h-44 w-40 bg-no-repeat bg-[url('../fotos/icone.png')]"></div>
+
+
+        </div>
+        <div class="absolute justify-center end-[190px] top-[570px] w-16 h-16 shadow-2xl rounded-full shadow-xl bg-[#C8C7C7]" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+          <div class="absolute top-4 left-3 bg-[url('../fotos/lapis.png')] bg-no-repeat h-16 w-16"></div>
+
+      </div>
+    
+      
+      </div>
+</body>
+</html>

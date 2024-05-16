@@ -3,44 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./output.css" rel="stylesheet" />
+    <link href="./output.css" rel="stylesheet"/>
+    <title>Login - Soundhub</title>
   </head>
 <body >
 
   <!-- fazer o gradiente aqui do fundo -->
-    <div class="flex h-screen min-h-full self-center items-center bg-[#1E90FF] px-6 py-12 lg:px-8">
+    <div class="flex h-screen min-h-full self-center items-center bg-gradient-to-r from-indigo-700 bg-[#1E90FF] px-6 py-12 lg:px-8">
       
       
-      <div class="mt-28 h-4/6 w-5/12 rounded-3xl bg-[#FEFEFE]">
+      <div class="ml-28 h-3/6 w-4/12 rounded-3xl bg-[#FEFEFE]">
 
                     
 
-        <div class="sm:mx-auto sm:w-full sm:max-w-sm">
+        <div class="sm:mx-auto w-96">
           <h2 class="mt-8 text-center text-3xl font-bold leading-9 tracking-tight text-cyan-300" style="text-shadow: 1px 1px 4px rgba(0,0,0,0.5)">Login</h2>
         </div>
 
-        <div class="mt-14 ml-10 sm:w-full sm:max-w-sm">
+        <div class="mt-14 ml-10 ">
           <form class="space-y-6" action="#" method="POST">
 
             <!--PARTE DO EMAIL-->
-            <div>
-              <label for="email" class="fixed text-sm mt-3  font-medium leading-6 text-cyan-300">Email:</label>
+            <div class="w-11/12 ">
+              <label for="email" class="absolute text-sm mt-3  font-medium leading-6 text-cyan-300">Email:</label>
               <div class="mt-2">
               <input id="email" name="email" type="email" autocomplete="email" required class="ml-10 focus:border-transparent flex sm:w-11/12 rounded-md focus:ring-indigo-600  py-2 text-gray-600 "/>
-              <div class="bg-[#87CEFA] w-full h-0.5"></div>
+              <div class="bg-[#87CEFA] w-12/12 h-0.5"></div>
                             
-
-            
             </div>
             </div>
 
             <!--PARTE DA SENHA-->
 
-            <div class="h-24 w-96">
-              <label for="password" class="fixed text-sm mt-3  font-medium leading-6 text-cyan-300">Password:</label>
+            <div class="h-24 w-11/12">
+              <label for="password" class="absolute text-sm mt-3  font-medium leading-6 text-cyan-300">Password:</label>
               <div class="mt-2">
               <input id="password" name="password" type="password" autocomplete="current-password" required class="ml-16 focus:border-transparent flex sm:w-11/12 rounded-md focus:ring-indigo-600  py-2 text-gray-600 "/>
-              <div class="bg-[#87CEFA] w-full h-0.5"></div>
+              <div class="bg-[#87CEFA] w-12/12 h-0.5"></div>
                             
 
             
@@ -53,67 +52,40 @@
 
             </div>
 
-            <div class="ml-10 flex h-full w-full">
+            <div class="ml-10 flex h-16 w-full">
 
 
 
 
-            <div>
-              <button type="submit" class="shadow-ms flex w-60 mr-4 justify-center rounded-md bg-[#1E90FF] px-3 py-1.5 text-sm font-semibold leading-6 text-white focus-visible:outline focus-visible:outline-2  shadow-xl" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">To enter</button>
+            <div class="h-16">
+              <button type="submit" class="shadow-ms h-16 flex w-60 mr-4 justify-center rounded-md place-items-center bg-[#1E90FF]  text-3xl font-semibold  text-white focus-visible:outline focus-visible:outline-2  shadow-xl" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">To enter</button>
             </div>
 
-            <div>
-              <button type="submit" class="shadow-ms flex w-72 justify-center rounded-md bg-[#1E90FF] px-3 py-1.5 text-sm font-semibold leading-6 text-white focus-visible:outline focus-visible:outline-2  shadow-xl" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Sign up</button>
+            <div class="h-10">
+              <button type="submit" onclick="window.location.href='./cadastro.html'"
+              class="shadow-ms h-16 flex w-72 justify-center place-items-center rounded-md bg-[#1E90FF] text-3xl font-semibold  text-white focus-visible:outline focus-visible:outline-2  shadow-xl" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Sign up</button>
             </div>
-
-
-
-
-
 
         </div>
 
-                    <!--FOTOS MIDIAS SOCIAIS-->
-
       </div>
 
-      <div class="h-10 w-96"></div>
+                    <!--DIV DA FOTO-->
+
+
+      <!-- DIV QUE ESPAÇA  -->
+      <div class="h-10   w-4/12"></div>
       
       <div class="flex justify-self-center justify-center items-center w-96 h-96 shadow-2xl rounded-full bg-[#D9D9D9]">
-        <div class= "h-52 w-40 bg-no-repeat bg-[url('../fotos/icone.png')]"></div>
+        <div class= "flex h-44 w-40 bg-no-repeat bg-[url('../fotos/icone.png')]"></div>
+
+
+        </div>
+        <div class="absolute justify-center end-[190px] top-[570px] w-16 h-16 shadow-2xl rounded-full shadow-xl bg-[#C8C7C7]" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">
+          <div class="absolute top-4 left-3 bg-[url('../fotos/lapis.png')] bg-no-repeat h-16 w-16"></div>
+
       </div>
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
+
       
       </div>
 </body>
