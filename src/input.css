@@ -1,3 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+    font-family: "Icones";
+    src: url("fonts/Danfo.ttf.ttf") format("ttf");
+}
+@tailwind utilities;
