@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="./output.css" rel="stylesheet">
+    <title>Music Player</title>
+    <style>
+        .background img {
+            filter: blur(15px);
+            -webkit-filter: blur(50px);
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body class="flex items-center justify-center min-h-screen font-ubuntu text-sm">
+
+    <div class="background fixed w-[200%] h-[200%] top-[-50%] left-[-50%] -z-10">
+        <img src="" id="bg-img" class="absolute m-auto top-0 left-0 bottom-0 right-0 min-w-[50%] min-h-[50%]">
+    </div>
+
+    <div class="container bg-gray-200 h-[500px] w-[400px] rounded-2xl shadow-lg transition-all duration-500 ease-in-out hover:shadow-2xl">
+        <div class="player-img w-[300px] h-[300px] relative -top-12 left-12">
+            <img src="" class="active object-cover rounded-2xl opacity-0 shadow-[0_5px_30px_5px_rgba(0,0,0,0.5)] transition-all duration-500" id="cover">
+        </div>
+
+        <h2 id="music-title" class="text-center text-2xl font-medium mt-2"></h2>
+        <h3 id="music-artist" class="text-center text-lg font-medium mt-2"></h3>
+
+        <div id="player-progress" class="player-progress bg-white rounded-md cursor-pointer mx-5 my-10 h-1.5 w-[90%]">
+            <div id="progress" class="progress bg-black rounded-md h-full w-0 transition-[width] duration-100 linear"></div>
+            <div class="music-duration relative -top-6 flex justify-between">
+                <span id="current-time">0:00</span>
+                <span id="duration">0:00</span>
+            </div>
+        </div>
+
+        <div class="player-controls relative -top-3 left-30 w-[200px] flex justify-around">
+            <i class="fa-solid fa-backward text-3xl text-gray-600 cursor-pointer transition-all duration-300 hover:brightness-[0.4]" title="Previous" id="prev"></i>
+            <i class="fa-solid fa-play play-button text-4xl text-gray-600 cursor-pointer transition-all duration-300 hover:brightness-[0.4]" title="Play" id="play"></i>
+            <i class="fa-solid fa-forward text-3xl text-gray-600 cursor-pointer transition-all duration-300 hover:brightness-[0.4]" title="Next" id="next"></i>
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
